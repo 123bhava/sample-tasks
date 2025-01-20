@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>sample image</title>
+        <style>
+            body {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                border: 2px solid hsl(181, 96%, 49%);
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+            button{
+                margin-top: 20px;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: blueviolet;
+                background-color: rgb(221, 142, 243);
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+            button:hover{
+                background-color: rgb(56, 1, 77);
+                transform: scale(1.05);
+            }
+            button:active {
+                transform: scale(0.90);
+                background-color: rgb(4, 77, 202);
+                color: white;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+                border: 2px solid white;
+                outline: none;
+                filter: brightness(1.1);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sample image 1</h1>
+        <img src="https://www.bing.com/th?id=OIP.B8u7c37kE5ZdM5ZCRm-4hwHaFF&w=132&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="example image 1" title="example image 1">
+        <h2>Sample image 2</h2>
+        <img src="https://th.bing.com/th?id=OIP.5aKhA8rhSGnJzNnkGJgtLwHaLH&w=204&h=306&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="example image 2" title="example image 2">
+        <h3>Sample image 3</h3>
+        <img src="https://www.bing.com/th?id=OIP.QVBY30VqTi-tlYt_BaoGqAHaEo&w=154&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="example image 3" title="example image 3">
+        <button onclick="alert('button clicked!')">click me</button>
+    </body>
+</html>

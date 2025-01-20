@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           body{
+            margin: 0;
+            font-family: Arial,sans-serif;
+        }
+        header{
+            background-color: darkolivegreen;
+            padding: 10px;
+            text-align: center;
+        }
+        .content{
+            padding: 20px;
+        }
+        .grid{
+            grid-template-columns: 1fr 1fr ;
+            display: grid;
+            gap: 20px;
+        }
+        @media(max-width: 600px){
+            .grid{
+                grid-template-columns: 1fr;
+            }
+         }
+         img{
+            max-width: 100%;
+            height: auto;
+         }
+        </style>
+    </head>
+    <body>
+        <header>
+            responsive design example
+        </header>
+        <div class="content">
+            <div class="grid">
+            <div><img src="https://cdn.photographylife.com/wp-content/uploads/2014/09/Nikon-D750-Image-Samples-2.jpg"alt="sample img"></div>
+            <div><p> this layout adjust based on screen size</p></div>
+           <p>Resize the browser window to see the color change</p>
+        </div>
+        </div>
+    </body>
+</html>
